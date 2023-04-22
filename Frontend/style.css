@@ -37,10 +37,9 @@ select, input {
 
 table {
 	width: 100%;
-	table-layout: fixed;
 }
 
-tr td:nth-child(1) { text-align: right; }
+tr td:nth-child(1) { text-align: right; width: 50%; }
 tr td:nth-child(2) { text-align: left; }
 
 td {

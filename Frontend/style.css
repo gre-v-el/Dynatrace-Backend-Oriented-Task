@@ -1,0 +1,48 @@
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+main {
+	background-color: #e0e0e0;
+	margin: 50px;
+	padding: 50px;
+	border-radius: 20px;
+	box-shadow: #888 0px 0px 40px;
+	text-align: center;
+}
+
+main > * {
+	margin: 0 0 50px 0;
+}
+
+.horizontal {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	align-items: center;
+}
+
+select, input {
+	height: 30px;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+tr td:nth-child(1) { text-align: right; }
+tr td:nth-child(2) { text-align: left; }
+
+td {
+	padding: 0px 20px;
+}

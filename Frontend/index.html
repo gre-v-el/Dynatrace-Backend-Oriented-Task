@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Frontend</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Test local server endpoints</h1>
+		
+		<table>
+			<tr>
+				<tr>
+					<td>
+						<h3>port:</h3>
+					</td>
+					<td>
+						<input type="text" id="port" value="8888">
+					</td>
+				</tr>
+				<td>
+					<h3>endpoint:</h3>
+				</td>
+				<td>
+					<select name="endpoint" id="endpoint">
+						<option value="rate">Exchange rate</option>
+						<option value="maxmin">Minimum and maximum exchange date</option>
+						<option value="majordiff">Major difference between ask and buy rates</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>currency:</h3>
+				</td>
+				<td>
+					<input type="text" id="currency" value="usd">
+				</td>
+			</tr>
+			<tr id="second-param">
+
+			</tr>
+		</table>
+
+		<h5>
+			Resulting URL: <br> 
+			<span id="URL"></span>
+		</h5>
+
+		<input type="button" value="Querry" id="button">
+
+		<h5>
+			code: <br>
+			<span id="code"></span> <br>
+			<br>
+			response: <br>
+			<span id="response"></span>
+		</h5>
+			
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
